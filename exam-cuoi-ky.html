@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thi hết môn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><img src="image/OIP.jpg" alt="">  </div> <br>
+            <div class="slogan"><br> Unleash your potential</div>
+            <div class="banner"><img src="image/R.jpg" alt=""></div>
+        </header>
+        <main>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <h2>Đăng ký thông tin người dùng</h2>
+                <div>
+                    <label for="fullName">Họ và tên:</label>
+                    <input type="text" id="fullName" required maxlength="50">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" required>
+                </div>
+                <div>
+                    <label>Giới tính:</label>
+                    <input type="radio" name="gender" value="male" required> Nam
+                    <input type="radio" name="gender" value="female" required> Nữ
+                </div>
+                <div>
+                    <label>Sở thích:</label>
+                    <input type="checkbox" name="hobbies" value="Thể thao"> Thể thao
+                    <input type="checkbox" name="hobbies" value="Phim ảnh"> Phim ảnh
+                    <input type="checkbox" name="hobbies" value="Đọc sách"> Học tập
+                    <input type="checkbox" name="hobbies" value="Âm nhạc"> Âm nhạc
+                    <input type="checkbox" name="hobbies" value="Khác"> Khác
+                </div>
+                <div>
+                    <label for="intro">Giới thiệu bản thân:</label>
+                    <textarea id="intro" rows="4"></textarea>
+                </div>
+                <button type="submit">Đăng ký</button>
+            </form>
+            <div id="userInfo" class="hidden">
+                <h2>Thông tin người dùng</h2>
+                <p id="fullNameDisplay"></p>
+                <p id="emailDisplay"></p>
+                <p id="phoneDisplay"></p>
+                <p id="genderDisplay"></p>
+                <p id="hobbiesDisplay"></p>
+                <p id="introDisplay"></p>
+            </div>
+        </main>
+        <footer>
+            <h4></h4>
+            <p> <strong>Contact Us:</strong> <br>
+                Address: <br>
+                Toà nhà Detech Tôn Thất Thuyết, Hà Nội. <br>
+                Phonenumber: 0123456789.
+            </p>
+        </footer>
+        <div class="copyright-text">
+            @Copyright <script>document.write(new Date().getFullYear());</script>
+        </div>
+    </div>
+
+    <script src="submit.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header, main, footer {
+    padding: 10px;
+}
+
+header {
+    background-color: aqua;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+}
+
+.logo, .slogan, .banner {
+    padding: 0px;
+}
+
+.slogan{
+    font-size: xx-large;
+    font-family: cursive;  
+    background-image: url('image/hinh-anh-background-nen-xanh-noi-khung-tinh-tu-2048x1024.jpg') ;
+    color: #ffffff;
+}
+.logo img{
+    height: 50px;
+    float: left;
+    border-radius: 5px;
+}
+.banner img{
+    height: 200px;
+    border-radius: 10px;
+}
+main form {
+    margin-bottom: 20px;
+    
+}
+main, footer{
+    background-color: aquamarine;
+    padding-right: 20px;
+}
+
+main label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+main input[type="text"], main input[type="email"], main textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+main input[type="radio"], main input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+main button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+footer{
+    text-align: center;
+}
+.copyright-text {
+	border-top: 10px solid #959595;
+	padding: 20px;
+	font-size: 16px;
+	color: #00ff1a;
+    background: #949494 ;
+    text-align: center;
+    width: 100;
+}
